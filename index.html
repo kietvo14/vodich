@@ -1,44 +1,35 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Đồng hồ điện tử</title>
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-     <div id="dong_ho">
-         <h2>Thời gian bây giờ là:</h2>
-         <div id="thoi_gian">
-             <div>
-                 <span id="gio">00</span><span>Giờ</span>
-             </div>
-             <div>
-                   <span id="phut">00</span><span>Phút</span>
-             </div>
-             <div>
-                 <span id="giay">00</span><span>Giây</span>
-             </div>
-         </div>
-     </div>
- </body>
- </html>
-Kế tiếp chúng ta sẽ thiết lập html và body trong file style.css với các bước là xác định font cho trang web, đưa nội dung ra chính giữa màn hình và thiết lập màu nền cho trang web của các bạn. Để nắm rõ hơn các bạn xem đoạn code và thêm vào file CSS của mình nhé:
-
-*{
-     margin:0;
-     padding:0;
-     box-sizing: border-box;
-     font-family: 'Open Sans', sans-serif;
- }
-body{
-     display:flex;
-     justify-content: center;
-     align-items: center;
-     min-height: 100vh;
-     background: #FFA17F;
-     background: -webkit-linear-gradient(to right, #00223E, #FFA17F);
-     background: linear-gradient(to right, #00223E, #FFA17F);
-   }
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="clock1.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="clock">
+    <div class="hourHand"></div>
+    <div class="minuteHand"></div>
+    <div class="sec"><div class="secondHand"></div></div>
+    <div class="center"></div>
+    <div class="red-center center"></div>
+    <ul>
+        <li><span>1</span></li>
+        <li><span>2</span></li>
+        <li><span>3</span></li>
+        <li><span>4</span></li>
+        <li><span>5</span></li>
+        <li><span>6</span></li>
+        <li><span>7</span></li>
+        <li><span>8</span></li>
+        <li><span>9</span></li>
+        <li><span>10</span></li>
+        <li><span>11</span></li>
+        <li><span>12</span></li>
+    </ul>
+  </div>
+   
+</body>
+</html>
