@@ -1,0 +1,5 @@
+< IfModule mod_rewrite.c>
+RewriteEngine bật
+RewriteCond  % {HTTP_HOST}  ^ vodichthienha \ .xyz  [NC]
+Quy tắc viết lại  ^ (. *) $  Http://www.vodichthienha.xyz/$1  [L, R = 301]
+</ IfModule >
